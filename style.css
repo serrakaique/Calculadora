@@ -1,21 +1,61 @@
 *{
-    padding: 0px;
-    margin: 0px;
-}
-
-#container{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fundo{
+    /*deixa o fundo começando do preto e termina em "vermelho"*/
+    background-image: linear-gradient(45deg, black, crimson);
+    /* O vh faz com que pegue toda a pagina */
+    height: 100vh;
+    color: white;
+    text-align: center;
+   
+  }
+  
+  .calculadora{
+   /*deixa a div ocupando o espaço dela apenas*/
     position: absolute;
-    height: 850px;
-    width: 1500px;
-    border: 3px solid black;
-    margin: 75px;
-}
-
-#corpo{
-    position: relative;
-    display: flex;
-    height: 150px;
-    width: 350px;
-    border: 3px solid black;
-    margin: 50%;
-}
+   
+    background-color: rgba(0, 0, 0, 0.8);
+   
+  /*Deixa exatamente no meio */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+   
+    border-radius: 15px;
+  /*Deixa o conteúdo de dentro com espaço da borda de dentro*/
+    padding: 15px;
+  }
+  
+  .botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  /*Muda o cursor do mouse*/
+    cursor: pointer;
+   
+    background-color: rgb(31,31,31);
+    border: none;
+   
+    color: #fff;
+   
+    margin: 3px;
+   
+  }
+  /*quando passar o mouse por cima dos teclados*/
+  .botao:hover{
+    background-color: black;
+  }
+  
+  #resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+  }
